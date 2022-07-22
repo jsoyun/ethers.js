@@ -24,5 +24,7 @@ abstract class User {
   }
 }
 
-//
+//player는 User로부터 상속받아서 안에 함수들을 쓸 수 있음.
 class Player extends User {}
+const nico = new Player("nico", "las", "니코");
+nico.getFullName();
