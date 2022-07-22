@@ -23,7 +23,7 @@ const push: Push = (config) => {
   }
 };
 
-///제너릭
+///제너릭generic
 type SuperPrint = {
   <TypePlaceholder>(arr: TypePlaceholder[]): TypePlaceholder;
 };
@@ -34,5 +34,16 @@ const superPrint: SuperPrint = (arr) =>
   // };
   arr[0];
 
+//이거를 함수로 바꿈
+function superprint<V>(a: V[]) {
+  return a[0];
+}
+
 superPrint([1, 2, 3, 4]);
 superPrint([true, false, true]);
+//
+type Player<E> = {
+  name: string;
+  //제너릭사용해서 얘는 아무거나 될 수 있음! any는 보호를 못하니까
+  extraInfo: E;
+};
