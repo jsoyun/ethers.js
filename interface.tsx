@@ -28,3 +28,4 @@ abstract class User {
 class Player extends User {}
 const nico = new Player("nico", "las", "니코");
 nico.getFullName();
+//캡슐화 개념을 다시 봐야겠다 이해안됨...
