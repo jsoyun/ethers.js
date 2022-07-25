@@ -25,7 +25,8 @@ abstract class User {
 }
 
 //player는 User로부터 상속받아서 안에 함수들을 쓸 수 있음.
-class Player extends User {}
-const nico = new Player("nico", "las", "니코");
+class Players extends User {}
+const nico = new Players("nico", "las", "니코");
 nico.getFullName();
 //캡슐화 개념을 다시 봐야겠다 이해안됨...
+//인터페이스 이해 못함
